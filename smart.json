@@ -1,0 +1,8 @@
+{
+  "packages": {
+    "meteor-flexiforms": {
+      "git": "git://github.com/pavlovich/meteor-flexiforms.git",
+      "branch": "master"
+    }
+  }
+}

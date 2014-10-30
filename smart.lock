@@ -1,0 +1,58 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "meteor-flexiforms": {
+        "git": "git://github.com/pavlovich/meteor-flexiforms.git",
+        "branch": "master"
+      }
+    },
+    "packages": {
+      "meteor-flexiforms": {
+        "git": "git://github.com/pavlovich/meteor-flexiforms.git",
+        "branch": "master",
+        "commit": "a2e36817cc0ff54ee429b458dacb79d7072acc4b"
+      },
+      "underscore-string-latest": {
+        "git": "https://github.com/TimHeckel/meteor-underscore-string.git",
+        "tag": "v2.3.3",
+        "commit": "4a5d70eee48fbd90a6e6fc78747250d704a0b3bb"
+      },
+      "meteor-fleximodel": {
+        "git": "git://github.com/pavlovich/meteor-fleximodel.git",
+        "branch": "master",
+        "commit": "f392abb3a43ae4b503e91243fc82c204907b712c"
+      },
+      "ng-meteor": {
+        "git": "git://github.com/pavlovich/ng-meteor.git",
+        "branch": "master",
+        "commit": "eacc7ed6f8779e12909615e4b82d82d62fcda055"
+      },
+      "meteor-ng-datepicker": {
+        "git": "git://github.com/pavlovich/meteor-ng-datepicker.git",
+        "branch": "master",
+        "commit": "474be3d1947c1b079ac1ba10dbf04414c197936b"
+      },
+      "meteor-sprintf-js": {
+        "git": "git://github.com/pavlovich/meteor-sprintf-js.git",
+        "branch": "master",
+        "commit": "d30b25cb4dafc1cc336468ef7069490807dba570"
+      },
+      "meteorhacks:fast-render": {
+        "git": "git://github.com/meteorhacks/fast-render.git",
+        "branch": "master",
+        "commit": "5130077808adb1615e844648a2196fbca0b03843"
+      },
+      "collection-hooks": {
+        "git": "https://github.com/matb33/meteor-collection-hooks.git",
+        "tag": "v0.7.2",
+        "commit": "261f61f07b371ae913463fba8964a9b93cab531b"
+      },
+      "moment": {
+        "git": "git://github.com/acreeger/meteor-moment.git",
+        "branch": "master",
+        "commit": "13db75d90b39861bb951ac74f07a00210ababaf8"
+      }
+    }
+  }
+}
