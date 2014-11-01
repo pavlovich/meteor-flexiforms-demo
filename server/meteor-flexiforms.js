@@ -30,18 +30,10 @@ var specDatax = [
                 ]
             },
             {
-                name: 'holdsCollection',
-                type: 'boolean',
-                default: false,
-                label: 'Holds a collection?',
-                template: 'checkbox',
-                inline: false,
-                validation: []
-            },
-            {
                 name: 'fields',
                 holdsCollection: true,
-                type: 'field',
+                type: 'model',
+                modelName: 'field',
                 label: 'Fields',
                 inline: false,
                 validation: [
@@ -129,6 +121,7 @@ var specDatax = [
                     hasValue: 'model'
                 },
                 options: {
+                    collectionSouce: 'db',
                     label: 'name',
                     value: 'name', //TODO should we add a 'label' field to our models for display purposes? Probably.
                     collectionName: 'meteorFlexiFormsModel'
@@ -136,12 +129,20 @@ var specDatax = [
             },
             {
                 name: 'label',
-                type: 'text'
+                type: 'text',
+                default: '', // TODO: should probably be value of the name field but capitalized.
+                validation: [
+                    {type: 'minlength', value: '1'}
+                ]
             },
             {
                 name: 'inline',
                 type: 'boolean',
-                default: false
+                default: false, // show labels for embedded objects by default.
+                visible: {
+                    field: 'type',
+                    hasValue: 'model'
+                }
             },
             {
                 name: 'inlineFields',
@@ -156,7 +157,11 @@ var specDatax = [
             {
                 name: 'holdsCollection',
                 type: 'boolean',
-                default: false
+                default: false,
+                label: 'Holds a collection?',
+                template: 'checkbox',
+                inline: false,
+                validation: []
             },
             {
                 name: 'validation',
