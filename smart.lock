@@ -11,7 +11,7 @@
       "meteor-flexiforms": {
         "git": "git://github.com/pavlovich/meteor-flexiforms.git",
         "branch": "master",
-        "commit": "a2e36817cc0ff54ee429b458dacb79d7072acc4b"
+        "commit": "022940b47cd2811801211a0330acb0b18abf95a6"
       },
       "underscore-string-latest": {
         "git": "https://github.com/TimHeckel/meteor-underscore-string.git",
@@ -21,17 +21,17 @@
       "meteor-fleximodel": {
         "git": "git://github.com/pavlovich/meteor-fleximodel.git",
         "branch": "master",
-        "commit": "f392abb3a43ae4b503e91243fc82c204907b712c"
+        "commit": "03166afc50bcf9a41e7afdadad9edf18b9fe0db8"
       },
       "ng-meteor": {
         "git": "git://github.com/pavlovich/ng-meteor.git",
         "branch": "master",
-        "commit": "eacc7ed6f8779e12909615e4b82d82d62fcda055"
+        "commit": "cb31caad109f89afbe5144767a85523c462ac184"
       },
       "meteor-ng-datepicker": {
         "git": "git://github.com/pavlovich/meteor-ng-datepicker.git",
         "branch": "master",
-        "commit": "474be3d1947c1b079ac1ba10dbf04414c197936b"
+        "commit": "611ec89ca0351575493425f4d222d1ce6ecf6ddf"
       },
       "meteor-sprintf-js": {
         "git": "git://github.com/pavlovich/meteor-sprintf-js.git",

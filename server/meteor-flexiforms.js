@@ -173,16 +173,17 @@ var specDatax = [
                 type: 'single',
                 options: {
                     collection: [
-                        {value: 'db'},
-                        {value: 'path'},
-                        {value: 'inline'}
+                        {label: 'From DB Collection', value: 'db'},
+                        {label: 'From a Property', value: 'path'},
+                        {label: 'Defined Inline', value: 'inline'},
+                        {label: 'Defined Properties', value: 'fields'}
                     ]
                 }
             },
             {
                 name: 'options',
                 type: 'model',
-                modelName: 'option',
+                modelName: 'collectionSelectionSettings',
                 visible: [
                     {
                         field: 'holdsCollection',
@@ -202,9 +203,60 @@ var specDatax = [
         displayString: "%(name)%s"
     },
     {
-        name: 'option',
+        name: 'collectionSelectionSettings',
         fields: [
-
+            {
+                name: 'label',
+                label: 'Attribute name for the label',
+                type: 'single',
+                embedded: false,
+                options: {
+                    label: 'label',
+                    value: 'name',
+                    collectionSource: 'fields'
+                }
+            },
+            {
+                name: 'value',
+                label: 'Attribute name for the value',
+                type: 'single',
+                embedded: false,
+                options: {
+                    label: 'label',
+                    value: 'name',
+                    collectionSource: 'fields'
+                }
+            },
+            {
+                name: 'group',
+                label: 'Name of attribute to group by',
+                type: 'single',
+                embedded: false,
+                options: {
+                    label: 'label',
+                    value: 'name',
+                    collectionSource: 'fields'
+                }
+            },
+            {
+                name: 'embedded',
+                label: 'Embed selected object',
+                type: 'boolean'
+            },
+            {
+                name: 'embedAllFields',
+                label: 'Embed All Fields',
+                type: 'boolean'
+            },
+            {
+                name: 'embeddedFields',
+                label: 'Select the fields to embed.',
+                holdsCollection: true
+            },
+            {
+                name: 'default',
+                label: 'Default selection value'
+            }
         ],
         displayString: "%(name)%s"
     }
