@@ -7,6 +7,7 @@ var specDatax = [
 
     {
         name: 'meteorFlexiFormsModel',
+        label: 'Meteor FlexiForm model',
         primary: true,
         fields: [
             {
