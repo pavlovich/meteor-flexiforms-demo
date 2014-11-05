@@ -31,5 +31,5 @@
   //    return sprintf("%(region.city)s, %(region.state.name)s ", item);
   //};
 
-  //ngMeteorForms.templateRegistry.sgiField = 'myFormField';
+  //ngMeteorForms.templateRegistry.mffField = 'myFormField';
 
