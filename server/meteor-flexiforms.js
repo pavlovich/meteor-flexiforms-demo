@@ -12,7 +12,7 @@ var specDatax = [
         fields: [
             {
                 name: 'name',
-                type: 'string',
+                type: 'text',
                 label: 'Name',
                 inline: false,
                 validation: {
@@ -44,7 +44,7 @@ var specDatax = [
             },
             {
                 name: 'displayString',
-                type: 'string',
+                type: 'text',
                 label: 'Summary Display Format',
                 inline: false,
                 validation: [
@@ -167,13 +167,14 @@ var specDatax = [
             {
                 name: 'validation',
                 holdsCollection: true,
-                type: 'validation'
+                type: 'rule'
             },
             {
                 name: 'collectionSource',
                 type: 'single',
                 options: {
                     collection: [
+                        {label: 'primitive type', value: 'primitive'},
                         {label: 'From DB Collection', value: 'db'},
                         {label: 'From a Property', value: 'path'},
                         {label: 'Defined Inline', value: 'inline'},
@@ -197,9 +198,24 @@ var specDatax = [
         displayString: "%(name)%s"
     },
     {
-        name: 'validation',
+        name: 'rule',
         fields: [
-
+            {
+                name: 'type',
+                type: 'single',
+                options: {
+                    collection: [
+                        {label: 'Minimum Value', value: 'min'},
+                        {label: 'Maximum Value', value: 'min'},
+                        {label: 'Minimum Count', value: 'minCount'},
+                        {label: 'Maximum Count', value: 'maxCount'},
+                        {label: 'Required field', value: 'required'},
+                        {label: 'Maximum Length', value: 'maxlength'},
+                        {label: 'Minimum Length', value: 'minlength'},
+                        {label: 'Type', value: 'type'}
+                    ]
+                }
+            }
         ],
         displayString: "%(name)%s"
     },
